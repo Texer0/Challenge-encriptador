@@ -1,0 +1,144 @@
+*{
+    font-family: 'Dancing Script', cursive;
+}
+body{
+    background: linear-gradient(160deg, white 50%, rgb(37, 0, 0));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(170deg, rgba(100, 0, 0, 0.8)50%, rgba(20, 0, 0, 0.9));
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+main .logo{
+    width: 30vw;    
+}
+
+main .logo img{
+    display: flex;
+    justify-content: center;
+}
+.input {
+    width: 67vw;
+    margin-left: 1vw;
+}
+
+textarea{
+    resize: none;
+    display: inline-block;
+    width: 90%;
+    height: 600px;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid;
+    font-size: 2em;
+    font-family: initial;
+    margin-left: 15px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.desencript, 
+.encript, 
+.copy{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(120, 0, 0);
+    color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin: 0 50px;
+    margin-top: 5px;
+}
+.copy{
+    width: 400px;
+    max-width: 400px;
+    min-width: 50px;
+    margin-right: none;
+    position: absolute;
+    bottom: 80px;
+    background: linear-gradient(170deg, rgb(120, 0, 0)60%, rgb(40, 40, 40));
+}
+
+.desencript:hover, 
+.encript:hover, 
+.copy:hover{
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+.desencript:not(:hover), 
+.encript:not(:hover), 
+.copy:not(:hover){
+    transition: 400ms;
+}
+
+.desencript:active, 
+.encript:active, 
+.copy:active{
+    background-color: rgb(150, 0, 0);
+    transition: 100ms;
+    box-shadow: 1px 1px 30px 1px #000000;
+}
+
+img{
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
+    margin: auto;
+}
+
+footer{
+    padding-top: 40px;
+    font-size: 17px;
+    margin-left: 1vw;
+}
+
+.centrar{
+    display: flex;
+    flex-direction: column;
+}
+.parrafo{
+    position: absolute;
+    display: inline-block;
+    max-width: 40%;
+    font-size: xx-large;
+    padding-left: 10px;
+    font-family: initial;
+}
+h2 {
+    display: flex;
+    font-family: initial;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1400px){
+    .copy{
+        width: 300px;
+    }
+}
+@media screen and(max-width: 1023px){
+    main{
+        flex-direction: column;
+        width: 100%;
+    }
+}
